@@ -14,7 +14,7 @@ User = get_user_model()
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    serializer_class = LoginSerializer
+    serializer_class = RegistrationSerializer
     permission_classes = [IsAuthenticated]
 
 
@@ -26,3 +26,5 @@ class UserViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response({"message": "User Logged in Successfully", "data": serializer.data}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    
