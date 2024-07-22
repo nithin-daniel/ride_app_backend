@@ -34,4 +34,5 @@ urlpatterns = [
     
     path("admin/", admin.site.urls),
     path("account/", include("authentication.urls")),
+    path("rides/", include("rides.urls")),
 ]

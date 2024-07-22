@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     "rest_framework_simplejwt",
     "authentication.apps.AuthenticationConfig",
+    "rides"
 ]
 
 MIDDLEWARE = [
