@@ -151,3 +151,11 @@ AUTH_USER_MODEL = "authentication.CustomUser"
 SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Zartak System Test',
+    'DESCRIPTION': 'System Test for Validating the candidate',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
